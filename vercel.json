@@ -1,7 +1,7 @@
 {
     "functions": {
       "api/randomPage": {
-        "maxDuration": 100
+        "maxDuration": 60
       }
     }
   }
