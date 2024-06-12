@@ -2,6 +2,9 @@ const categoria = 'Players';
 const wikiUrl = 'https://liquipedia.net/valorant';
 const apiUrl = `${wikiUrl}/api.php?action=query&list=categorymembers&cmtitle=Category:${categoria}&cmlimit=500&format=json`;
 
+require = require('esm')(module /*, options*/);
+module.exports = require('./randomPage.js');
+
 import('node-fetch').then(({ default: fetch }) => {
     fetch(apiUrl)
         .then(response => {
